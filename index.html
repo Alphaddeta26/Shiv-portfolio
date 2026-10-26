@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Shivam Mishra</title>
+  <meta name="description" content="Portfolio of Shivam Mishra, software and AI engineer. Talk to AI in the most efficient way.">
+  <meta name="theme-color" content="#081214">
+  <meta property="og:title" content="Shivam Mishra">
+  <meta property="og:description" content="Software engineer and AI engineer building retrieval and LLM systems with Claude.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23081214'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23e5c992'%3ESM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="prog" aria-hidden="true"></div>
+<div id="glow" aria-hidden="true"></div>
+
+<div class="shell">
+  <header class="top">
+    <div class="pill">
+      <a class="brand" href="#top" aria-label="Shivam Mishra, top of page"><span class="full">Shivam Mishra</span><span class="ini">SM</span></a>
+      <nav id="nav" aria-label="Sections"></nav>
+      <button class="theme" id="theme" type="button">Theme</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="top">
+      <div class="hero-panel" id="hero-panel">
+        <canvas id="net" aria-hidden="true"></canvas>
+        <div class="eyebrow rise" style="--d: 0ms"><span class="pulse"></span><span id="h-eyebrow"></span></div>
+        <h1 id="h-name"></h1>
+        <p class="role-line rise" style="--d: 700ms" id="h-role" aria-live="off"></p>
+        <p class="tagline rise" style="--d: 800ms" id="h-tagline"></p>
+        <p class="about rise" style="--d: 900ms" id="h-about"></p>
+        <div class="facts rise" style="--d: 950ms" id="h-facts"></div>
+        <div class="cta rise" style="--d: 1050ms">
+          <a class="btn primary" href="#work">See the work</a>
+          <a class="btn" href="#ask" id="cta-ask">Ask Claude about me</a>
+        </div>
+      </div>
+      <div class="pipe rv" id="pipe"></div>
+    </section>
+
+    <section id="ask" hidden>
+      <div class="sec-head rv">
+        <div class="eyebrow">Ask Claude</div>
+        <h2>Talk to AI in the most efficient way.</h2>
+        <p>Claude reads the details on this page and replies in a few sentences. It says so when something is not covered here.</p>
+      </div>
+      <div class="ask rv">
+        <div class="chips" id="ask-chips"></div>
+        <form class="ask-row" id="ask-form">
+          <input id="ask-q" type="text" maxlength="300" placeholder="What has Shivam built with LLMs?" aria-label="Your question">
+          <button class="btn primary" id="ask-go" type="submit">Ask</button>
+        </form>
+        <div class="answer" id="ask-out" role="status" aria-live="polite"></div>
+        <p class="note">Answers are generated from this page's content. Check anything important with me directly.</p>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="sec-head rv">
+        <div class="eyebrow">Selected work</div>
+        <h2>Systems built to be checked.</h2>
+        <p>Filter by topic. Move over a card to see it respond.</p>
+      </div>
+      <div class="chips rv" id="work-filters" style="margin-bottom: 20px"></div>
+      <div class="cards" id="work-list"></div>
+    </section>
+
+    <section id="design">
+      <div class="sec-head rv">
+        <div class="eyebrow">Interface and UX</div>
+        <h2>How I design around AI.</h2>
+        <p>A model is only useful when a person can trust what it shows. Open a principle to read how it shaped the work.</p>
+      </div>
+      <div class="acc rv" id="acc"></div>
+    </section>
+
+    <section id="system">
+      <div class="sec-head rv">
+        <div class="eyebrow">Under the hood</div>
+        <h2>This page is data first.</h2>
+        <p>Every section is drawn from one content object. Adding a project means adding an entry, and the filters, navigation and Q&amp;A pick it up.</p>
+      </div>
+      <div class="layers rv" id="layers"></div>
+      <pre class="code rv" id="schema"></pre>
+      <ul class="growth rv" id="growth"></ul>
+    </section>
+
+    <section id="contact">
+      <div class="sec-head rv">
+        <div class="eyebrow">Contact</div>
+        <h2>Let's build something.</h2>
+      </div>
+      <div class="contact-wrap rv" id="contact-list"></div>
+      <footer id="foot"></footer>
+    </section>
+  </main>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
